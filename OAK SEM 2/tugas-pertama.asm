@@ -1,3 +1,9 @@
+;Buat listing program (program assembly beserta kode mesinnya) untuk menukarkan isi dari register A dan B dan menyimpan hasil penjumlahan keduanya ke register C
+;Gunakan nilai awal A = 10H dan B = 20H dengan alamat awal program di 0100H
+;Gunakan beberapa instruksi yang ada
+;Hasil akhir seharusnya A = 20H, B = 10H dan C = 30H
+;Untuk memudahkan, buat algoritma atau ilustrasi penyimpanan register
+
 org 0100H 
 
 MOV AX, 10H ;Memuat nilai 10H ke dalam register AX (A).
