@@ -1,5 +1,6 @@
-# NS basic2.tcl example of two TCPs competing on the same link.
+# SOURCE: http://intronetworks.cs.luc.edu/current2/html/ns2.html
 
+# NS basic2.tcl example of two TCPs competing on the same link.
 # Create a simulator object
 set ns [new Simulator]
 
