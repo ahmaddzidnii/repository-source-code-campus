@@ -1,9 +1,9 @@
 set ns [new Simulator]
 $ns color 1 Red
 $ns color 2 Blue
-set nf [open TcpVegas-DT.nam w]
+set nf [open tcp-vegas-droptail.nam w]
 $ns namtrace-all $nf
-set nd [open TcpVegas-DT.tr w]
+set nd [open tcp-vegas-droptail.tr w]
 $ns trace-all $nd
 
 proc finish {} {
