@@ -5,13 +5,6 @@ set nf [open tcp-newreno-red.nam w]
 $ns namtrace-all $nf
 set nd [open tcp-newreno-red.tr w]
 $ns trace-all $nd
-#cwndtcp1
-#$ns namtrace-all $nf
-#set cwnd1 [open cwndsk1_1.tr w]
-#cwndtcp2
-#$ns namtrace-all $nf
-#set cwnd2 [open cwndsk1_2.tr w]
-#**************************************
 #prosedur "finish"
 proc finish {} {
     global tchan_
