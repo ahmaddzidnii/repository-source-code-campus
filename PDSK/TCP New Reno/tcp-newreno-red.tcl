@@ -1,9 +1,9 @@
 set ns [new Simulator]
 $ns color 1 Red
 $ns color 2 Blue
-set nf [open tc.nam w]
+set nf [open tcp-newreno-red.nam w]
 $ns namtrace-all $nf
-set nd [open TcpTahoe-RED.tr w]
+set nd [open tcp-newreno-red.tr w]
 $ns trace-all $nd
 #cwndtcp1
 #$ns namtrace-all $nf
