@@ -106,21 +106,6 @@ $tcp tracevar cwnd_
 $tcp2 attach $nd
 $tcp2 tracevar cwnd_
 
-#Pengeplotan data cwnd dengan file akhir .xg
-proc plotWindow {tcpSource outfile} {
-    global ns
-    set now [$ns now]
-    set cwnd [$tcpSource set cwnd_]
-    puts $outfile "$now $cwnd"
-    $ns at [expr $now+0.1] "plotWindow $tcpSource $outfile"
-}
-
-#set outfile [open "cwndsk1_tcp1.xg" w]
-#$ns at 0.0 "plotWindow $tcp $outfile"
-#set outfile [open "cwndsk1_tcp2.xg" w]
-#$ns at 0.0 "plotWindow $tcp2 $outfile"
-
-#****************************************
 $ns at 0.1 "$ftp start"
 $ns at 0.1 "$ftp2 start"
 $ns at 300.1 "$ftp stop"
