@@ -46,7 +46,7 @@ $ns queue-limit $n2 $n3 20
 $ns duplex-link-op $n2 $n3 queuePos 0.5
 
 # Agent TCP SACK 1 dan aplikasi FTP
-set tcp [new Agent/TCP/Sack]
+set tcp [new Agent/TCP/Sack1]
 $tcp set class_ 1
 $ns attach-agent $n0 $tcp
 set sink [new Agent/TCPSink]
@@ -62,7 +62,7 @@ $tcp attach $nd
 $tcp tracevar cwnd_
 
 # Agent TCP SACK 2 dan aplikasi FTP
-set tcp2 [new Agent/TCP/Sack]
+set tcp2 [new Agent/TCP/Sack1]
 $tcp2 set class_ 2
 $ns attach-agent $n1 $tcp2
 set sink2 [new Agent/TCPSink]
