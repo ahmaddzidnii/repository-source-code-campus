@@ -82,7 +82,7 @@ $redq set linterm_ 10
 
 # Agent TCP SACK dan aplikasi FTP
 # TCP 1
-set tcp [new Agent/TCP/Sack]
+set tcp [new Agent/TCP/Sack1]
 $tcp set class_ 1
 $ns attach-agent $n0 $tcp
 set sink [new Agent/TCPSink]
@@ -98,7 +98,7 @@ $tcp attach $nd
 $tcp tracevar cwnd_
 
 # TCP 2
-set tcp2 [new Agent/TCP/Sack]
+set tcp2 [new Agent/TCP/Sack1]
 $tcp2 set class_ 2
 $ns attach-agent $n1 $tcp2
 set sink2 [new Agent/TCPSink]
