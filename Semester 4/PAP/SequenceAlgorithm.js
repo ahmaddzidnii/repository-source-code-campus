@@ -8,7 +8,6 @@ function generateSequence(N) {
     current += step;
     step += 2;
   }
-
   console.log(result);
 }
 
